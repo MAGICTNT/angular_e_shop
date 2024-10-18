@@ -1,0 +1,23 @@
+
+name: PUSH_PG
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: angular process
+      uses: AhsanAyaz/angular-deploy-gh-pages-actions@v1.4.0
+      with:
+        github_access_token: ${{ secrets.PUSH_PG }} #Token que j'ai genéré et mis dans mes secret de repo
+        build_configuration: production # dans angular.json c'est la valeur par default c'est peut-être pas la même pour tous
+        base_href: /angular_e_shop/ # le nom de mon repo
+        angular_dist_build_folder: dist/exo_e_commerce/browser # dist/[nom_du_projet]/browser
+
+permissions:
+  contents: write # Au moment de faire le token il faut penser à lui autoriser l'ecriture des commit et du deployment
