@@ -5,12 +5,12 @@ import { AdminComponent } from './pages/admin/admin.component';
 
 export const routes: Routes = [
     {
-        path: 'angular_e_shop', 
+        path: '', 
         title: "home",
         component: HomeComponent 
     },
     {
-        path: 'angular_e_shop/panier', 
+        path: 'panier', 
         title: "panier",
         component: PanierComponent 
     },
