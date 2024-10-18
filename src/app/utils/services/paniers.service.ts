@@ -14,6 +14,7 @@ import { Product } from "../types/product.type"
      }
   
      addPanier(product: Product): void{
+      this.product.push(product)
       localStorage.setItem('panier', JSON.stringify(this.product))
      }
 
