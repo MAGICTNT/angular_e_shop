@@ -1,0 +1,8 @@
+
+<div class="flex flex-wrap justify-center">
+    @for (product of productList; track product) {
+        <div class="w-1/4 m-8 ">
+            <app-marchandises [product]="product"/>
+        </div>
+    }
+</div>
