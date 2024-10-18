@@ -16,7 +16,7 @@ jobs:
       with:
         github_access_token: ${{ secrets.PUSH_PG }} #Token que j'ai genéré et mis dans mes secret de repo
         build_configuration: production # dans angular.json c'est la valeur par default c'est peut-être pas la même pour tous
-        base_href: / # le nom de mon repo
+        base_href: /angular_e_shop/ # le nom de mon repo
         angular_dist_build_folder: dist/exo_e_commerce/browser # dist/[nom_du_projet]/browser
 
 permissions:
