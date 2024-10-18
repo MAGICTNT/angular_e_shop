@@ -5,4 +5,8 @@
             <app-marchandises [product]="product"/>
         </div>
     }
+
+    @if(productList.length <= 0){
+        <p>desoler pas de produit, il dois etre ajouter dans l'admin</p>
+    }
 </div>
