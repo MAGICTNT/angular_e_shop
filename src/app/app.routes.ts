@@ -15,7 +15,7 @@ export const routes: Routes = [
         component: PanierComponent 
     },
     {
-        path: 'angular_e_shop/admin', 
+        path: 'admin', 
         title: "admin",
         component: AdminComponent 
     },
