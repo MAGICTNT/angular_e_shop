@@ -10,12 +10,12 @@ export const routes: Routes = [
         component: HomeComponent 
     },
     {
-        path: '/panier', 
+        path: 'angular_e_shop/panier', 
         title: "panier",
         component: PanierComponent 
     },
     {
-        path: '/admin', 
+        path: 'angular_e_shop/admin', 
         title: "admin",
         component: AdminComponent 
     },
